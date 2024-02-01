@@ -16,18 +16,33 @@ code {
     monospace;
 }
 
-.App {
-  text-align: center;
+.poppins {
+  font-family: 'Poppins', sans-serif;
 }
 
-.logo {
+.inter {
+  font-family: 'Inter', sans-serif;
+}
 
+.navbar {
+  font-family: 'Poppins', sans-serif;
 }
 
 .btnOutline {
-  @apply px-4 py-2 border border-indigo-600 rounded-sm text-indigo-600 hover:bg-indigo-500 hover:text-white transition-all duration-300;
+  @apply px-4 py-2 transition-all duration-300;
+  background:linear-gradient(.25turn, #45008B, 30%, #9953F3);
+  border-radius: 10px;
+  color: white;
+  font-weight: semibold;
 }
 
+.colorone {
+  color: #45008B;
+}
+
+.colortwo {
+  color: #9953F3;
+}
 
 .sm-menu {
   position:absolute;
@@ -37,5 +52,16 @@ code {
 }
 
 .menu_visible  {
-  transform: translateX(-0%);
+  transform: translateX(0%);
 }
+
+.hamburger {
+  transform: rotate(0deg);
+  transition: 0.2s ease-in-out;
+}
+
+.menu_hamburger_rotate {
+  transform: rotate(180deg);
+}
+
+
