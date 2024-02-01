@@ -10,7 +10,7 @@ function Header() {
             <div className="container flex flex-col justify-between gap-0 items-center p-6 mx-auto my-auto lg:flex-row lg:min-h-[calc(100vh-82px)]">
 
                 <div className="w-full lg:w-1/2 flex flex-col justify-center p-6">
-                    <h1 className="text-7xl font-bold leading-tight	">Création de vôtre site <span className="bg-gradient-to-r from-[#45008B] to-[#9953F3] inline-block text-transparent bg-clip-text"> web</span>. </h1>
+                    <h1 className="text-7xl font-bold leading-tight	text-center md:text-left">Création de vôtre site <span className="bg-gradient-to-r from-[#45008B] to-[#9953F3] inline-block text-transparent bg-clip-text"> web</span>. </h1>
                     <p className="mt-6 mb-8 text-lg sm:mb-6"> En tant qu’entreprise, il est essentiel d’avoir une présence sur le web. Capter de nouveaux prospects,rassurer sa clientèle ou mettre en avant ses services.</p>
                     <p className='mt-0 mb-8 text-lg sm:mb-6'> Chez <span className="font-bold">Nocturna</span> nous avons mis au point la meilleure offre du marché pour votre e-réputation.</p>
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
