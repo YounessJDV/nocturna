@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -22,6 +23,14 @@ code {
 
 .inter {
   font-family: 'Inter', sans-serif;
+}
+
+.container {
+  @apply w-5/6 mx-auto
+}
+
+.lock-scroll {
+  overflow: hidden;
 }
 
 .navbar {
@@ -45,7 +54,9 @@ code {
 }
 
 .sm-menu {
-  position:absolute;
+  z-index:20;
+  overflow: hidden;
+  position:fixed;
   top:0;
   transition: ease-in 0.3s;
   transform: translateX(-100%);
@@ -64,4 +75,25 @@ code {
   transform: rotate(180deg);
 }
 
+
+
+
+
+.faqImgLg {
+  position: relative;
+  margin: auto;
+  margin-bottom: -70px;
+  margin-left: -10px;
+  z-index: -30;
+  transform: rotate(30deg);
+
+}
+
+.faqImgSm {
+  position: relative;
+  top: 0;
+  margin-left: -150px;
+  margin-bottom: -120px;
+  z-index: -10;
+}
 

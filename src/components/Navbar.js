@@ -13,30 +13,32 @@ const Navbar = () => {
     const toggleMenu = () => {
         setMenuVisible(!menuVisible);
         setHamburgerAfter(!hamburgerBefore);
+        document.body.classList.toggle('lock-scroll');
     };
 
     return (
+
         <div class="navbar border-b-2 border-gray shadow-xl"> 
-            {/* <header className="w-5/6 mx-auto fixed top-0 left-0 right-0 py-4">
-            <nav className={`y-4 md:px-8 px-4 bg-white ${isSticky ? "sticky top-0 right-0 left-0 bg-white" : ""}`}> */}
+
             <header className="w-5/6 mx-auto py-4">
                 <nav className="y-4 md:px-8 px-4">
                     <div className="flex flex-row items-center place-content-between">
 
                         {/*My logo*/}
-                        <div className="logo">
+                        <div className="w-1/3 logo">
                             <img class="h-12" src={LogoImg} alt="logo"></img>
                             
                         </div>
 
                         {/*for larger devices*/}
-                        <div className="lg:flex font-medium items-center gap-3 hidden">
+                        <div className="w-1/3 justify-center lg:flex font-medium items-center gap-3 hidden">
+                        <a href="/" className="block hover:text-gray-400 py-2 px-1 xl:px-4">Accueil</a>
                             <a href="/" className="block hover:text-gray-400 py-2 px-1 xl:px-4">Création de site web</a>
                             {/* <a href="/" className="block hover:text-gray-400 py-2 px-1 xl:px-4">FAQ</a> */}
                         </div>
                         
                         {/*Contact me btn*/}
-                        <div className="lg:flex hidden">
+                        <div className="w-1/3 justify-end lg:flex hidden">
                             <div className="flex items-center mx-5">
                                 <img class="h-10 mx-2" src={phoneIcon} alt="logo"></img>
                                 <div class="items-center text-sm font-semibold">
@@ -61,16 +63,15 @@ const Navbar = () => {
 
 
 
-        <div className={`lg:hidden flex flex-col sm-menu w-full h-full mx-0 p-3 bg-indigo-500 text-white ${menuVisible ? 'menu_visible' : ''}`}>
-            <button onClick={toggleMenu} className=" p-5 text-3xl flex justify-end">
-                <BiX/>
-            </button>
-            <div>
-                <a href="/" className="block hover:text-gray-400 py-2">Accueil</a>
-                <a href="/" className="block hover:text-gray-400 py-2">Création de site web</a>
-                <a href="/" className="block hover:text-gray-400 py-2">Contact</a>
-            </div>
-
+            <div className={`lg:hidden flex flex-col sm-menu w-full h-full mx-0 p-3 bg-indigo-500 text-white ${menuVisible ? 'menu_visible' : ''}`}>
+                <button onClick={toggleMenu} className=" p-5 text-3xl flex justify-end">
+                    <BiX/>
+                </button>
+                <div>
+                    <a href="/" className="block hover:text-gray-400 py-2">Accueil</a>
+                    <a href="/" className="block hover:text-gray-400 py-2">Création de site web</a>
+                    <a href="/" className="block hover:text-gray-400 py-2">Contact</a>
+                </div>
 
                 <div className="flex flex-col items-center overflow-hidden mt-5 py-3 bg-white rounded-lg">
                     <div className="flex items-center mt-0 mb-2 space-x-2">
@@ -81,14 +82,11 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                        <button className="btnOutline my-0">
-                            Contact
-                        </button>
+                    <button className="btnOutline my-0">
+                        Contact
+                    </button>
                 </div>
-
-        </div>
-
-
+            </div>
         </div>
     )
 }
