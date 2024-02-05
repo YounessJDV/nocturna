@@ -37,7 +37,7 @@ export const Offres = () => {
           </p>
         </div>
         <div className="grid max-w-md gap-10 row-gap-5 sm:row-gap-10 lg:max-w-screen-md lg:grid-cols-2 mx-auto">
-          <div className="flex flex-col justify-between p-5 bg-white border rounded shadow-sm">
+          <div className="flex flex-col W-FULL justify-between p-5 bg-white border rounded shadow-sm">
             <div className="mb-6">
               <div className="flex items-center justify-center pb-6 mb-6 border-b">
                 <div>

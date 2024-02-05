@@ -63,9 +63,11 @@ const Navbar = () => {
 
 
             <div className={`lg:hidden flex flex-col sm-menu w-full h-full mx-0 p-3 bg-[#45008B] text-white ${menuVisible ? 'menu_visible' : ''}`}>
+                
                 <button onClick={toggleMenu} className=" p-5 text-3xl flex justify-end">
                     <BiX/>
                 </button>
+                
                 <div class="text-center">
                     {/* <a href="/" className="block hover:text-gray-400 py-2">Accueil</a> */}
                     <a href="/" className="block hover:text-gray-400 py-2">Création de site web</a>
@@ -85,6 +87,11 @@ const Navbar = () => {
                         Contact
                     </button>
                 </div>
+
+                <div class="flex justify-center">
+                    <img class="h-12 my-12 invert" src={LogoImg} alt="logo"></img>
+                </div>
+
             </div>
         </div>
     )

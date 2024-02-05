@@ -13,7 +13,7 @@ const Item = ({ title, children }) => {
           onClick={() => setIsOpen(!isOpen)}
         >
           <p className="text-left sm:text-md md:text-lg font-medium">{title}</p>
-          <div className="flex items-center justify-center w-10 h-10 bg-[#45008B] border rounded-full">
+          <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-[#45008B] to-[#9953F3] border rounded-full">
             <svg
               viewBox="0 0 24 24"
               className={`w-3 text-white transition-transform duration-200 ${
