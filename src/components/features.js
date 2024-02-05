@@ -7,15 +7,15 @@ import { FaChartLine } from "react-icons/fa";
 function Features() {
     return (
 
-        <div class="sm:container sm:min-h-[calc(100vh-20vh)] flex flex-col justify-center mx-auto items-center p-6 px-6 bg-white dark:bg-gray-800 poppins">
-            <div class="mb-12 text-center">
+        <div class="sm:container sm:min-h-[calc(100vh-20vh)] flex flex-col justify-center mx-auto items-center p-6 px-6 bg-white dark:bg-gray-800 poppins" data-aos="fade-down" data-aos-duration="1300">
+            <div class="mb-0 md:mb-6 text-center">
                 <h2 class="text-base font-semibold tracking-wide text-[#45008B] uppercase">
                     Découvrez...
                 </h2>
                 <p class="mt-4 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 dark:text-white sm:text-5xl">
                     Une agence à votre <span class="bg-gradient-to-r from-[#45008B] to-[#9953F3] inline-block text-transparent bg-clip-text">service</span>
                 </p>
-                <p class="w-3/4 sm:w-full mx-auto text-md md:text-lg my-3 leading-7 text-gray-500 dark:text-gray-300">
+                <p class="w-4/5 sm:w-full mx-auto text-md md:text-lg my-3 leading-7 text-gray-500 dark:text-gray-300">
                     <span class="font-bold">Nocturna</span> vous propose la création de votre site web sur mesure.
                 </p>
             </div>
