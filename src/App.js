@@ -5,6 +5,7 @@ import Offres from './components/offres'
 import Footer from './components/footer'
 import Faq from './components/faq'
 import Realisations from "./components/realisations"
+import Cta from './components/cta'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Offres />
       <Realisations />
       <Faq />
-      <Footer />
+      <Cta class="z-10"/>
+      <Footer clas="z-0" />
     </div>
   );
 }

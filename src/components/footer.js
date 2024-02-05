@@ -2,7 +2,7 @@ import LogoImg from '../img/navbar/nav_logo.png'
 
 function Footer() {
     return (
-        <footer class="flex flex-col bg-gradient-to-t from-[#45008B] to-[#63179C] poppins">
+        <footer class="flex flex-col bg-gradient-to-t from-[#45008B] to-[#63179C] poppins pt-12">
                 <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 mt-16 flex flex-col justify-center md:flex-row md:justify-between gap-12">
                     <div class="w-full md:w-1/3">
                                 <img class="h-12 invert" src={LogoImg} alt="logo"></img>
@@ -43,8 +43,8 @@ function Footer() {
             <div className='w-full md:w-5/6 mx-auto border-t-2 border-gray'></div>
 
             <div class="flex flex-col md:flex-row md:justify-between md:items-center w-full md:w-5/6 mx-auto my-6 px-4 md:px-0 text-white">
-                    <div class="text-sm text-left">© Copyright nocturna-agency.fr</div>
-                    <a  class="text-right md:text-none">Mentions Légales</a>
+                    <div class="text-center text-sm  my-4 order-last sm:mb-0 sm:order-first sm:text-left">© Copyright nocturna-agency.fr</div>
+                    <a  class="text-center order-first sm:order-last sm:text-right md:text-none">Mentions Légales</a>
             </div>
         </footer>
     )

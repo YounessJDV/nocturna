@@ -1,5 +1,5 @@
 import { useState } from "react";
-import imgFaq from '../img/faq/imgFaq.svg'
+import imgFaq from '../img/faq/faq_illustration.png'
 
 const Item = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Item = ({ title, children }) => {
           className="flex items-center justify-between w-full p-4 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <p className="text-lg font-medium">{title}</p>
+          <p className="text-left sm:text-md md:text-lg font-medium">{title}</p>
           <div className="flex items-center justify-center w-10 h-10 bg-[#45008B] border rounded-full">
             <svg
               viewBox="0 0 24 24"
@@ -47,10 +47,12 @@ const Item = ({ title, children }) => {
         <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
           <div class="flex flex-col mb-16 sm:text-center">
 
-            <div class="max-w-xl mx-auto sm:text-center lg:max-w-2xl">
-              <img class="faqImgLg" src={imgFaq} alt="illustration_faq"></img>
-              <h2 class="max-w-lg mb-0 text-center font-sans text-3xl font-bold leading-none text-gray-900 sm:text-4xl">
-                Foire aux questions
+            <div class="mx-auto justify-items-center	sm:text-center lg:max-w-2xl">
+              <img class="faqImgLg mx-auto" src={imgFaq} alt="illustration_faq"></img>
+              <h2 class=" mb-0 text-center font-sans text-3xl font-bold leading-none text-gray-900 sm:text-4xl">
+                <span class="faq-titre">
+                  Foire aux questions
+                </span>
               </h2> 
             </div>
 
