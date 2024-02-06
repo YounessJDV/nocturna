@@ -29,7 +29,7 @@ const Navbar = () => {
                         {/*My logo*/}
                         <div className="md:w-1/3 logo">
                             <a onClick={() => {window.location.href="/"}}>
-                                <img className="h-12 dark:invert hover:cursor-pointer	" src={LogoImg} alt="logo"></img>
+                                <img className="h-12 dark:invert hover:cursor-pointer" src={LogoImg} alt="logo"></img>
                             </a>
                             
                         </div>

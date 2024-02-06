@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 function Contact() {
   
     const form = useRef();
+    const valeurBtn = "Envoyer"
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -26,8 +27,8 @@ function Contact() {
     
   return (
 
-        <section className="text-gray-700 body-font relative">
-            <div className="container px-0 lg:px-5 py-24 mx-auto">
+        <section className="text-gray-700 body-font relative" data-aos="fade-up" data-aos-duration="800">
+            <div className="container px-0 lg:px-5 pt-24 pb-16 md:py-24 mx-auto">
                 <div className="flex flex-col w-full xl:w-2/3 mx-auto text-center mb-12">
                     <h1 className="font-extrabold text-4xl sm:text-5xl leading-8 tracking-tight text-gray-900 dark:text-white">
                         <span class="offre-titre-contact poppins">Contactez-nous</span>
@@ -38,11 +39,27 @@ function Contact() {
                 </div>
                 
                 <div className="w-full xl:w-2/3 mx-auto">
-                    <div ref={form} className="flex flex-wrap -m-2">
+                    <form ref={form} onSubmit={sendEmail} className="flex flex-wrap -m-2">
                         <div className="p-2 w-1/2">
                             <div className="relative">
-                            <label for="user_name" className="leading-7 text-sm text-gray-600">
+                            <label for="user_surname" className="leading-7 text-sm text-gray-600">
                                 Nom
+                            </label>
+                            <input
+                                type="text"
+                                id="user_surname"
+                                name="user_surname"
+                                className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            />
+                            </div>
+                        </div>
+                        <div className="p-2 w-1/2">
+                            <div className="relative">
+                            <label
+                                for="user_name"
+                                className="leading-7 text-sm text-gray-600"
+                            >
+                                Prénom
                             </label>
                             <input
                                 type="text"
@@ -52,20 +69,20 @@ function Contact() {
                             />
                             </div>
                         </div>
-                        <div className="p-2 w-1/2">
+                        <div className="p-2 w-full">
                             <div className="relative">
                             <label
-                                for="user_surname"
+                                for="user_email"
                                 className="leading-7 text-sm text-gray-600"
                             >
-                                Prénom
+                                E-mail
                             </label>
                             <input
-                                type="text"
-                                id="user_surname"
-                                name="user_surname"
+                                type='email'
+                                id="user_email"
+                                name="user_email"
                                 className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                            />
+                            ></input>
                             </div>
                         </div>
                         <div className="p-2 w-full">
@@ -77,6 +94,7 @@ function Contact() {
                                 Téléphone
                             </label>
                             <input
+                                type='tel'
                                 id="user_tel"
                                 name="user_tel"
                                 className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -92,6 +110,7 @@ function Contact() {
                                 Ville
                             </label>
                             <input
+                                type='text'
                                 id="user_ville"
                                 name="user_ville"
                                 className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -112,33 +131,31 @@ function Contact() {
                                 className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             >
                                 <option value="">Sélectionnez...</option>
-                                <option value="choix_projet_standard">Site web standard</option>
-                                <option value="choix_projet_premium">Site web premium</option>
-                                <option value="choix_projet_autre">Autre</option>
+                                <option value="Site web Standard">Site web standard</option>
+                                <option value="Site web Premium">Site web premium</option>
+                                <option value="Autre projet">Autre</option>
                             </select>
                             </div>
                         </div>
                         <div className="p-2 w-full">
                             <div className="relative">
                             <label
-                                for="user_message"
+                                for="message"
                                 className="leading-7 text-sm text-gray-600"
                             >
                                 Message
                             </label>
                             <textarea
-                                id="user_message"
-                                name="user_message"
+                                id="message"
+                                name="message"
                                 className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                             ></textarea>
                             </div>
                         </div>
                         <div className="p-2 w-full">
-                            <button className="btnOutline flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                                Envoyer
-                            </button>
+                            <input type="submit" value={valeurBtn} className="btnOutline flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg poppins"></input>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
             </div>

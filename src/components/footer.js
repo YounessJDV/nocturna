@@ -1,4 +1,5 @@
-import { HashLink as Link } from 'react-router-hash-link';
+import { BrowserRouter as Router, Route, Routes, Switch, Link } from "react-router-dom";
+
 import LogoImg from '../img/navbar/nav_logo.png'
 
 function Footer() {
@@ -6,15 +7,20 @@ function Footer() {
         <footer className="flex flex-col bg-gradient-to-t from-[#45008B] to-[#63179C] poppins pt-12">
                 <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 mt-16 flex flex-col justify-center md:flex-row md:justify-between gap-12">
                     <div className="w-full md:w-1/3">
-                                <img className="h-12 invert" src={LogoImg} alt="logo"></img>
-                                <p className="w-10/12 mt-3 md:mt-6 text-sm text-white">
-                                Nocturna, votre partenaire de confiance pour
-                                la transformation digitale et la croissance de
-                                votre entreprise. En tant qu'agence spécialisée,
-                                nous sommes dédiés à fournir des solutions
-                                innovantes pour propulser votre présence en 
-                                ligne et booster vos résultats.
-                                </p>
+               
+                            
+                        <a onClick={() => {window.location.href="/"}}>
+                            <img className="h-12 invert hover:cursor-pointer" src={LogoImg} alt="logo"></img>
+                        </a>
+                        <p className="w-10/12 mt-3 md:mt-6 text-sm text-white">
+                            Nocturna, votre partenaire de confiance pour
+                            la transformation digitale et la croissance de
+                            votre entrepris
+                            e. En tant qu'agence spécialisée,
+                            nous sommes dédiés à fournir des solutions
+                            innovantes pour propulser votre présence en 
+                            ligne et booster vos résultats.
+                        </p>
                     </div>
 
                     <div className="w-full md:w-1/3 sm:text-left">

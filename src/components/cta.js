@@ -1,5 +1,4 @@
-
-import { HashLink as Link } from 'react-router-hash-link';
+import { BrowserRouter as Router, Route, Routes, Switch, Link } from "react-router-dom";
 
 function Cta() {
     return (

@@ -1,3 +1,6 @@
+import { BrowserRouter as Router, Route, Routes, Switch, Link } from "react-router-dom";
+
+
 export const Offres = () => {
     return (
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" data-aos="zoom-in" data-aos-duration="1300">
@@ -177,12 +180,12 @@ export const Offres = () => {
               </div>
             </div>
             <div>
-              <a
-                href="/"
+              <Link
+                to="/contact"
                 className="inline-flex items-center justify-center w-full h-12 px-6 mb-4 font-medium tracking-wide text-white transition duration-200 bg-[#45008B] rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
               >
                 DEVIS GRATUIT
-              </a>
+              </Link>
               {/* <p className="text-sm text-gray-600">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium
@@ -353,12 +356,12 @@ export const Offres = () => {
               </div>
             </div>
             <div>
-              <a
-                href="/"
+              <Link
+                to="/contact"
                 className="inline-flex items-center justify-center w-full h-12 px-6 mb-4 font-medium tracking-wide text-white transition duration-200 bg-[#45008B] rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
               >
                 DEVIS GRATUIT
-              </a>
+              </Link>
               {/* <p className="text-sm text-gray-600">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium
