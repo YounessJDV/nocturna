@@ -20,7 +20,7 @@ const Navbar = () => {
 
     return (
 
-        <div class="navbar bg-white dark:bg-black border-b-2 border-gray dark:border-[#45008B]"> 
+        <div className="navbar bg-white dark:bg-black border-b-2 border-gray dark:border-[#45008B]"> 
 
             <header className="w-5/6 mx-auto py-4">
                 <nav className="y-4 md:px-8 px-4">
@@ -28,9 +28,9 @@ const Navbar = () => {
 
                         {/*My logo*/}
                         <div className="md:w-1/3 logo">
-                            <Link to="/">
-                                <img class="h-12 dark:invert" src={LogoImg} alt="logo"></img>
-                            </Link>
+                            <a onClick={() => {window.location.href="/"}}>
+                                <img className="h-12 dark:invert hover:cursor-pointer	" src={LogoImg} alt="logo"></img>
+                            </a>
                             
                         </div>
 
@@ -44,16 +44,16 @@ const Navbar = () => {
                         {/*Contact me btn*/}
                         <div className="w-1/3 justify-end lg:flex hidden">
                             <div className="flex items-center mx-5">
-                                <img class="h-10 mx-2" src={phoneIcon} alt="logo"></img>
-                                <div class="items-center text-sm">
-                                    <p class="font-semibold text-black dark:text-white">Appelez-nous</p>
-                                    <a class="font-medium text-gray-500 dark:text-white hover:cursor-pointer">07 81 90 51 92</a>
+                                <img className="h-10 mx-2" src={phoneIcon} alt="logo"></img>
+                                <div className="items-center text-sm">
+                                    <p className="font-semibold text-black dark:text-white">Appelez-nous</p>
+                                    <a href="tel:+33781905192" className="font-medium text-gray-500 dark:text-white hover:cursor-pointer">07 81 90 51 92</a>
                                 </div>
                             </div>
 
-                            <button className="btnOutline ml-5">
+                            <Link to="/contact" className="btnOutline ml-5">
                                 Contact
-                            </button>
+                            </Link>
                         </div>
 
                         {/*Open small menu btn*/}
@@ -73,7 +73,7 @@ const Navbar = () => {
                     <BiX/>
                 </button>
                 
-                <div class="text-center">
+                <div className="text-center">
                     {/* <a href="/" className="block hover:text-gray-400 py-2">Accueil</a> */}
                     <Link to="/" onClick={toggleMenu} className="block hover:text-gray-400 py-2">Création de site web</Link>
                     <Link to="/contact" onClick={toggleMenu} className="block hover:text-gray-400 py-2">Contact</Link>
@@ -81,10 +81,10 @@ const Navbar = () => {
 
                 <div className="flex flex-col items-center overflow-hidden mt-5 py-3 bg-white rounded-lg">
                     <div className="flex items-center mt-0 mb-2 space-x-2">
-                        <img class="h-10 mx-0 px-0" src={phoneIcon} alt="logo"></img>
-                        <div class="items-center text-sm font-semibold">
-                            <p class="text-black">Appelez-nous</p>
-                            <a href="tel:+33781905192" class="text-gray-500 hover:cursor-pointer">07 81 90 51 92</a>
+                        <img className="h-10 mx-0 px-0" src={phoneIcon} alt="logo"></img>
+                        <div className="items-center text-sm font-semibold">
+                            <p className="text-black">Appelez-nous</p>
+                            <a href="tel:+33781905192" className="text-gray-500 hover:cursor-pointer">07 81 90 51 92</a>
                         </div>
                     </div>
 
@@ -93,8 +93,8 @@ const Navbar = () => {
                     </button> */}
                 </div>
 
-                <div class="flex justify-center">
-                    <img class="h-12 my-12 invert" src={LogoImg} alt="logo"></img>
+                <div className="flex justify-center">
+                    <img className="h-12 my-12 invert" src={LogoImg} alt="logo"></img>
                 </div>
 
             </div>

@@ -1,6 +1,6 @@
 export const Offres = () => {
     return (
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" data-aos="zoom-in" data-aos-duration="1300">
         <div className="max-w-xl mb-10 mx-auto text-center lg:max-w-2xl md:mb-12">
           <div>
           </div>
@@ -50,7 +50,7 @@ export const Offres = () => {
                       </svg>
                     </div>
                     <p className="font-medium text-gray-800">
-                      Site <span class="font-bold">une page</span> complet
+                      Site <span className="font-bold">une page</span> complet
                     </p>
                   </li>
                   <li className="flex items-center">
@@ -226,7 +226,7 @@ export const Offres = () => {
                       </svg>
                     </div>
                     <p className="font-medium text-gray-800">
-                      Site <span class="font-bold">multi-page</span> complet
+                      Site <span className="font-bold">multi-page</span> complet
                     </p>
                   </li>
                   <li className="flex items-center">
@@ -347,7 +347,7 @@ export const Offres = () => {
                         />
                       </svg>
                     </div>
-                    <p className="font-medium text-gray-800">Livraison entre <span class="font-bold">5 à 7 jours</span></p>
+                    <p className="font-medium text-gray-800">Livraison entre <span className="font-bold">5 à 7 jours</span></p>
                   </li>
                 </ul>
               </div>

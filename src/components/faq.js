@@ -43,14 +43,14 @@ const Item = ({ title, children }) => {
   
   export const Faq = () => {
     return (
-      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 poppins">
-        <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
-          <div class="flex flex-col mb-16 sm:text-center">
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 poppins" data-aos="fade-up" data-aos-duration="1300" data-aos-anchor-placement="top-bottom">
+        <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
+          <div className="flex flex-col mb-16 sm:text-center">
 
-            <div class="mx-auto justify-items-center	sm:text-center lg:max-w-2xl">
-              <img class="faqImgLg mx-auto" src={imgFaq} alt="illustration_faq"></img>
-              <h2 class=" mb-0 text-center font-sans text-3xl font-bold leading-none text-gray-900 sm:text-4xl">
-                <span class="faq-titre">
+            <div className="mx-auto justify-items-center	sm:text-center lg:max-w-2xl">
+              <img className="faqImgLg mx-auto" src={imgFaq} alt="illustration_faq"></img>
+              <h2 className=" mb-0 text-center font-sans text-3xl font-bold leading-none text-gray-900 sm:text-4xl">
+                <span className="faq-titre">
                   Foire aux questions
                 </span>
               </h2> 
@@ -58,7 +58,7 @@ const Item = ({ title, children }) => {
 
           </div>
 
-          <div class="space-y-4">
+          <div className="space-y-4">
             <Item title="Pourquoi choisir Nocturna ?">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque rem aperiam, eaque ipsa quae.
