@@ -31,9 +31,9 @@ function Footer() {
 
                             <li><a className="text-white transition hover:text-white/75" href="/">Création de site web vitrine</a></li>
 
-                            <li><a className="text-white transition hover:text-white/75" href="/">Création d’identité visuellee</a></li>
+                            <li><a className="text-white transition hover:text-white/75" href="/">Création d’identité visuelle</a></li>
 
-                            <li><a className="text-white transition hover:text-white/75" href="/">Logo & Flyer</a></li>
+                            <li><a className="text-white transition hover:text-white/75" href="/">Logo & Design</a></li>
                         </ul>
                     </div>
 
@@ -41,8 +41,8 @@ function Footer() {
                         <p className="text-lg font-medium text-white py-2">CONTACTEZ-NOUS</p>
 
                         <ul className="mt-2 md:mt-6 space-y-4 text-sm">
-                            <li><a className="text-white transition hover:text-white/75" href="/"> Mail : nocturna@contact.com </a></li>
-                            <li><a className="text-white transition hover:text-white/75" href="/">Téléphone : 07 81 90 51 92</a></li>
+                            <li className="text-white"> Mail : <a  className="text-white transition hover:text-white/75" href="mailto:jounidovyouness@gmail.com">nocturna@contact.com </a></li>
+                            <li className="text-white">Téléphone : <a className="text-white transition hover:text-white/75" href="/">07 81 90 51 92</a></li>
                             <li><Link to="/contact" className="text-white transition hover:text-white/75"> Contact </Link></li>
                         </ul>
                     </div>
