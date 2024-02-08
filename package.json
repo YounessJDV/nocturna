@@ -1,7 +1,7 @@
 {
   "name": "nocturna",
   "version": "0.1.0",
-  "homepage": "https://younessjdv.github.io/react-gh-pages",
+  "homepage": "https://younessjdv.github.io/nocturna",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
